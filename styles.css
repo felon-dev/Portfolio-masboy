@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  scroll-behavior: smooth;
+}
+
+
+header {
+  margin-top: 0;
+  padding: 100px 20px 50px;
+  background: linear-gradient(135deg, #007cf0, #00dfd8);
+  color: #fff;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.rotate-text {
+  font-size: 1.5rem;
+  font-style: italic;
+  animation: rotate 5s infinite;
+}
+
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #00dfd8;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #007cf0;
+  color: #fff;
+}
+
+
+nav {
+  background-color: #007cf0; /* Blue background */
+  padding: 10px 0; /* Adjust padding as needed */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  margin-bottom: 0; /* Ensure no space below the navbar */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00dfd8;
+}
+
+/* Skills Section */
+#skills {
+  background: #f4f4f4;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skill {
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  width: 150px;
+}
+
+.skill i {
+  font-size: 2rem;
+  color: #007cf0;
+}
+
+.skill:hover {
+  transform: translateY(-10px);
+}
+
+/* Projects Section */
+#projects {
+  background: #fff;
+  padding: 60px 20px;
+}
+
+#projects h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
+#contact {
+  background: linear-gradient(135deg, #00dfd8, #007cf0);
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  color: #00dfd8;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Animations */
+@keyframes rotate {
+  0%, 100% { content: "Frontend Developer"; }
+  33% { content: "React Specialist"; }
+  66% { content: "Designer"; }
+}
